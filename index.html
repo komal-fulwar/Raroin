@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="title" content="" />
     <meta name="description" content="Premium NFT marketplace theme" />
-    <meta
+    <!-- <meta
       name="keywords"
       content="bootstrap, creabik, ThemeForest, bootstrap5, agency theme, saas
 			theme, sass, html5"
-    />
+    /> -->
     <meta name="robots" content="index, follow" />
     <meta name="language" content="English" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>-  - home 2</title>
+    <title></title>
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -77,9 +77,9 @@
             <div class="header__menu text-center">
               <ul class="d-flex space-x-20 text-center">
                 <li class="has_popup">
-                  <a class="color_brand" href="#"  style="font-family: 'Space Mono', Sans-serif;">Stake</a>
+                  <a class="color_brand" href="Dashboard.html"  style="font-family: 'Space Mono', Sans-serif;">Home</a>
                 </li>
-                <li><a class="color_black" href="Dashboard.html"  style="font-family: 'Space Mono', Sans-serif;"> Dashboard</a></li>
+                <li><a class="color_black" href="index.html"  style="font-family: 'Space Mono', Sans-serif;"> Dashboard</a></li>
                 <li><a class="color_black" href="#"  style="font-family: 'Space Mono', Sans-serif;"> FAQ</a></li>
                 <li><a class="color_black" href="#"  style="font-family: 'Space Mono', Sans-serif;"> Other Nav Links</a></li>
               </ul>
@@ -333,7 +333,7 @@
                     <div class="card_footer justify-content-between flex-column">
                      
                       <a href="#" class="btn btn-primary btn-sm w-100
-                      btn_auction" data-toggle="modal" data-target="#popup_Stake" style="font-family: 'Space Mono', Sans-serif;">Stake Now
+                      btn_auction" data-toggle="modal" data-target="#popup_Stake" style="font-family: 'Space Mono', Sans-serif;">Claim Now
                     </a>
                     </div>
                   </div>
@@ -650,10 +650,12 @@
       <div class="container web">
         <div class="logos__wrap">
           <div>
-            <canvas  height="40" id="myChart"></canvas>
+          
+            <canvas id="line-chart"  height="70"></canvas>
           </div>
         </div>
       </div>
+     
       <div class="container mobile">
         <div class="logos__wrap">
           <div>
@@ -665,7 +667,7 @@
       <div class="hero__2">
       <div class="container ">
         <div class="space-y-20">
-          <h1 class="hero__title text-center" ><span  style=" font-family: 'Righteous', Sans-serif;">Pool</span></h1>
+          <h1 class="hero__title text-center" ><span  style=" font-family: 'Righteous', Sans-serif;">Transaction Histroy</span></h1>
           <p class="hero__text text-center"  style="font-family: 'Space Mono', Sans-serif;">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
           </p>
@@ -674,104 +676,80 @@
         <br>
         <br>
     
-        <div class="row " style="display: flex;
-        flex-wrap: nowrap;">
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="card__item four">
-              <div class="card_body space-y-10">
-                <!-- =============== -->
-                <div class="creators space-x-10">
-                  <div class="avatars space-x-3">
-                   
-                    <!-- <div>
-                      <p class="avatars_desc color_black">
-                        <span class="txt _bold">@samj</span>
-                        accepted an offer for
-                        about <span class="color_brand">$4,906</span>
-                        on Bound To Fall
-                        In Love from <span class="bayer">@colborn</span>
-                      </p>
-                      <span class="time color_text">23 min ago</span>
-                    </div> -->
-                  </div>
-                </div>
-                <div class="card_head">
-                  <div>
-                    <h3 class=" p-10 avatars_desc color_black text-center">
-                      
-                      
-                       <span class="bayer"  style=" font-family: 'Righteous', Sans-serif;">Heading</span>
-                    </h3>
-                    <div>
-                    <div class="hr" style="background:rgba(117, 117, 117, 0.653); width: 100%;"></div>
-                  </div>
-                    <p class=" p-10 avatars_desc color_black text-center">
-                      
-                      
-                      <span class="bayer"  style="font-family: 'Space Mono', Sans-serif;"> sub-Heading</span>
-                   </p>
-                   
-                  </div>
-                </div>
-                <div class="card_footer justify-content-between flex-column">
+        <div class="container">
+          <div class="box d-flex table-responsive">
+              <table class="table ranking ">
+                  <thead>
+                      <tr>
                      
-                  <a href="#" class="btn btn-primary btn-sm w-100
-                  btn_auction" data-toggle="modal" data-target="#popup_Stake"  style="font-family: 'Space Mono', Sans-serif;">
+                          <th scope="col"><span>Volume</span></th>
+                          <th scope="col"><span>24h %</span></th>
+                          <th scope="col"><span>7d %</span></th>
+                          <th scope="col"><span>Floor Price</span></th>
+                          <th scope="col"><span>Owners</span></th>
+                          <th scope="col"><span>Assets</span></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        
+                          <td><span>12,4353</span></td>
+                          <td><span class="color_green">+3456%</span></td>
+                          <td><span class="color_red">-564%</span></td>
+                          <td><span>12,4353 ETH</span></td>
+                          <td><span>3.3k<span></td>
+                          <td><span>23k<span></td>
+                      </tr>
+                      <tr>
+                      
+                          <td><span>12,4353</span></td>
+                          <td><span class="color_green">+3456%</span></td>
+                          <td><span class="color_red">-564%</span></td>
+                          <td><span>12,4353 ETH<span></td>
+                          <td><span>3.3k<span></td>
+                          <td><span>23k<span></td>
+                      </tr>
+                      <tr>
+                         
+                          <td><span>12,4353</span></td>
+                          <td><span class="color_green">+3456%</span></td>
+                          <td><span class="color_red">-564%</span></td>
+                          <td><span>12,4353 ETH<span></td>
+                          <td><span>3.3k<span></td>
+                          <td><span>23k<span></td>
+                      </tr>
+                      <tr>
+                          <td><span>12,4353</span></td>
+                          <td><span class="color_green">+3456%</span></td>
+                          <td><span class="color_red">-564%</span></td>
+                          <td><span>12,4353 ETH<span></td>
+                          <td><span>3.3k<span></td>
+                          <td><span>23k<span></td>
+                      </tr>
+                      <tr>
+                        
+                          <td><span>12,4353</span></td>
+                          <td><span class="color_green">+3456%</span></td>
+                          <td><span class="color_red">-564%</span></td>
+                          <td><span>12,4353 ETH<span></td>
+                          <td><span>3.3k<span></td>
+                          <td><span>23k<span></td>
+                      </tr>
+                  </tbody>
+              </table>
                
-                  Stake
-                </a>
-                </div>
-              </div>
-            </div>
+              
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="card__item four">
-              <div class="card_body space-y-10">
-                <!-- =============== -->
-                <div class="creators space-x-10">
-                  <div class="avatars space-x-3">
-                   
-                   
-                  </div>
-                </div>
-                <div class="card_head">
-                  <div>
-                    <h3 class=" p-10 avatars_desc color_black text-center">
-                      
-                      
-                       <span class="bayer"  style=" font-family: 'Righteous', Sans-serif;">Heading</span>
-                    </h3>
-                    <div>
-                    <div class="hr" style="background:rgba(117, 117, 117, 0.653); width: 100%;"></div>
-                  </div>
-                    <p class=" p-10 avatars_desc color_black text-center">
-                      
-                      
-                      <span class="bayer"  style="font-family: 'Space Mono', Sans-serif;"> sub-Heading</span>
-                   </p>
-                   
-                  </div>
-                </div>
-                <div class="d-flex align-items-center space-x-10
-			        						justify-content-md-around">
-                          <a href="#" class="btn btn-primary btn-sm w-50
-                          btn_auction" data-toggle="modal" data-target="#popup_Stake"  style="font-family: 'Space Mono', Sans-serif;">
-                       
-                          Stake
-                        </a>
-                          <a href="#" class="btn  btn-sm w-50
-                          btn_auction" data-toggle="modal" data-target="#popup_Stake"  style="color :white;font-family: 'Space Mono', Sans-serif; ">
-                       
-                        View Details
-                        </a>
-			        				
-			        					</div>
-                </div>
-              </div>
-            </div>
+          <br>
+          <div class="space-x-20 d-flex justify-content-center">
+            <a  style="font-family: 'Space Mono', Sans-serif;" class="btn btn-primary btn-md" href="Marketplace.html"
+              >View All</a
+            >
           </div>
+      </div>
         </div>
       </div>
+      
      <div class=" saas-template">
       <div class="container about-template">
         <section class="muse-section">
@@ -863,6 +841,32 @@
     document.getElementById('myChart2'),
     config
   );
+</script>
+<script>
+  new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
+    datasets: [{ 
+        data: [86,114,106,106,107,111,133,221,783,2478],
+        label: "staked",
+        borderColor: "#9fc3e7",
+        fill: true
+      }, { 
+        data: [282,350,411,502,635,809,947,1402,3700,5267],
+        label: "claimed",
+        borderColor: "#6c65df",
+        fill: true
+      }, 
+    ]
+  },
+  options: {
+    title: {
+      display: true,
+      
+    }
+  }
+});
 </script>
     
     <!-- 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 SCRIPTS -->
