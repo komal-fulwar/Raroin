@@ -20575,7 +20575,8 @@ label:active:after {
 .is__dark label,
 .is__dark .btn-dark,
 .is__dark .header__1 .header__mobile {
-  background: #305571;
+  background: #13173ff2;
+  border: 2px solid #6c65df;
 }
 
 .is__dark .color_green {
