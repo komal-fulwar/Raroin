@@ -20891,5 +20891,21 @@ label:active:after {
   );
   background: linear-gradient(transparent, #0d102d73, #0d102dd6, #0d102d);
 }
+.mobile {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .mobile {
+    display: block;
+  }
+}
+.web {
+  display: block;
+}
+@media screen and (max-width: 600px) {
+  .web {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
